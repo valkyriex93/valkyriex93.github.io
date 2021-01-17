@@ -1,0 +1,19 @@
+h1 {
+  font-family: sans-serif
+}
+
+#current-earnings {
+  font-size: 6em;
+}
+
+#calculations, #current-earnings {
+  font-family: monospace;
+}
+
+form .input-group {
+  margin-bottom: 1em;
+}
+
+#calculations .rate, #calculations .duration {
+  font-weight: 600;
+}

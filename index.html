@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<title>Workplace Planning Consultant I</title>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="decimal.min.js" defer></script>
+    <script src="mainloop.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+
+
+
+
+  <body>
+    <h1>Workplace Planning Consultant I</h1>
+
+    <style>
+    h1 {text-align: center;}
+    header {text-align: center;}
+    h2 {text-align: center;}
+    p {text-align: center;}
+
+    #seconds {font-size: 5em;}
+    #minutes {font-size: 5em;}
+    #colon {font-size: 5em;}
+
+
+    .item1{background:DarkSeaGreen;}
+    .item2{background:DarkSLateGrey;}
+    .item3{background:ForestGreen;}
+    .item4{background:LightGray;}
+    .item5{background:Gold;}
+    .item7{background:BlueViolet;}
+    .item6{background:Silver;}
+    .item8{background:LightGreen;}
+
+
+    .container {
+      font-size: 40px;
+      min-height: 200px;
+      width: 100%;
+      background: LightGray;
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+      grid-gap: 10px;
+
+    }
+
+    .container2 {
+      font-size: 30px;
+      min-height: 210px;
+      width: 100%;
+      background: Lightgray;
+      display: grid;
+      grid-gap: 10px;
+    }
+
+    </style>
+
+
+
+    <div class="container">
+      <div class="item1"><p>Contacts</p>
+      <p>
+      <input type="text" style="font-size: 50pt" maxlength="3" size="3">
+      </p>
+    </div>
+
+      <div class="item2"><p>Planning</p>
+        <p>
+        <input type="text" style="font-size: 50pt" maxlength="3" size="3">
+        </p>
+      </div>
+
+      <div class="item3"><p>Referrals</p>
+        <p>
+        <input type="text" style="font-size: 50pt" maxlength="3" size="3">
+        </p>
+      </div>
+
+    </div>
+    <div class="container2">
+      <div class="item4"><p>Income Clock</p></div>
+      <div class="item5">This Job <br>
+        <form>
+          <div class="input-group">
+            <label for="input-hourly-wage">Hourly wage ($/hour)</label>
+            <input type="number" id="input-hourly-wage" step="0.01" placeholder="0.00" required>
+            <input type="submit" value="Update Wage">
+          </div>
+          <div class="input-group">
+            <input type="button" id="input-toggle-clock" value="Start Clock">
+            <input type="button" id="input-reset-clock" value="Reset Clock">
+          </div>
+        </form>
+        <p id="calculations">
+          <span class="duration">0h 0m 0s</span> × <span class="rate">$0.00</span> / hour =
+
+        </p>
+        <div id="current-earnings">
+          $0.00
+        </div></div>
+
+
+    </main>
+  </body>
+</html>
